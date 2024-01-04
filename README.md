@@ -8,7 +8,7 @@ The basic idea is to detect and pursue the widest available space or passage in 
 ## The Algorithm
 
 ```mermaid
-flowchart TD
+flowchart TD ;
 A(Start) --> ldd[Establish a look ahead distance]
 ldd --> loop{Loop Start}
 loop --> filter[Filter Lidar sensor data]
