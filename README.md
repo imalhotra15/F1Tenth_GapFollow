@@ -8,21 +8,22 @@ The basic idea is to detect and pursue the widest available space or passage in 
 ## The Algorithm
 
 ```mermaid
+
 flowchart TD ;
-A(Start) --> ldd[Establish a look ahead distance]
-ldd --> loop{Loop Start}
-loop --> filter[Filter Lidar sensor data]
-filter --> gap[Identify widest gap]
+A(Start) --> ldd[Establish a look ahead distance] ;
+ldd --> loop{Loop Start} ;
+loop --> filter[Filter Lidar sensor data] ;
+filter --> gap[Identify widest gap] ;
 gap --> diff["Identify 'disparity' in sensor
-            data to mark 'edges' of objects"]
+            data to mark 'edges' of objects"] ;
 diff --> dilate[Dilate Lidar data on either side 
                 of the disparity points by a
                 certain threshold by marking
-                it as 'Not Gap']
-dilate --> center['Find the centerpoint of the widest gap']
+                it as 'Not Gap'] ;
+dilate --> center['Find the centerpoint of the widest gap'] ;
 center --> command["Steering angle points towards the centerpoint
-                    Speed = Exponentian_decay(Steering Angle) "]
-command --> loop
+                    Speed = Exponentian_decay(Steering Angle) "] ;
+command --> loop ;
 
 ```
 
