@@ -76,6 +76,16 @@ Speed Control: The speed is calculated as a function of the steering angle. The 
 ![image](https://github.com/imalhotra15/F1Tenth_GapFollow/assets/118845522/e356faf1-82ce-425f-b9bc-4a2fdda2b7fd)
 *Representation of exponential decay function*
 
+## Final Result
+
+Here's the video of the final result after careful hyperparameter tuning.
+
+
+
+https://github.com/user-attachments/assets/75db6a11-7ef5-4acf-8b86-88e10ccd8f61
+
+
+
 ## The Algorithm
 
 ```mermaid
